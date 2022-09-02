@@ -18,14 +18,14 @@ btnSubscribe.addEventListener('click', async () => {
   }
 
   // Salvar no banco de dados:
-  const subscriptionId = await subscribeHellfireClub(subscription)
+  const id = await subscribeHellfireClub(subscription)
 
   txtName.value = ''
   txtEmail.value = ''
   txtLevel.value = ''
   txtCharacter.value = ''
 
-  alert(`Inscrito com sucesso: ${subscriptionId}`)
+  alert(`Inscrição ${id} foi adicionada com sucesso!`)
 })
 
 async function loadData() {
